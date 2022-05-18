@@ -607,5 +607,5 @@ La normalisation est une approche de conception de base de données utilisée da
 
 # References
 
-1- [SQL Tutorial](https://www.luo-darmstadt.de/sqltutorial/index.html)
-2- [database fiddle playground](https://www.db-fiddle.com/f/5gbt7Z9msqwU9S5cG8YsMM/73)
+1- [SQL Tutorial](https://www.luo-darmstadt.de/sqltutorial/index.html)<br>
+2- [database fiddle playground](https://www.db-fiddle.com/f/5gbt7Z9msqwU9S5cG8YsMM/73)<br>
