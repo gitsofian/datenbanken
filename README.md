@@ -479,6 +479,24 @@ La normalisation est une approche de conception de base de données utilisée da
 
       - Hast Du in der where-Klausel der Hauptabfrage einen Vergleichsoperator benutzt, so darf die Unterabfrage nur einen einzigen Wert als Ergebnis liefern.
 
+### Übung V
+
+- Aufgabe 1
+  - Welche Länder haben mehr Einwohner als das bevölkerungsreichste Land Südamerikas?
+    <code>select Name from cia where Einwohner > (select MAX(Einwohner) from cia where Region = "Südamerika");</code>
+
+* Aufgabe 2
+  - Welche Länder haben eine größere Bevölkerung als Europa?
+    <code>select Name from cia where Einwohner > (select SUM(Einwohner) from cia where Region = "Europa");</code>
+* Aufgabe 3
+  - Zeige die Länder Europas, die ein größeres pro Kopf Bruttoinlandsprodukt als Groß-Britannien haben.
+    <code>select Name from cia where Region = "Europa" and BIP/Einwohner > (select BIP/Einwohner from cia where Name = "Groß-Britannien")</code>
+* Aufgabe 4
+  - Zeige die Daten der Ländern an, die den selben Regionen wie Armenien und Iran angehören.
+    <code>select \* from cia where Region in (select Region from cia where Name in ('Armenien', 'Iran'));</code>
+* Aufgabe 5
+  - Welche Länder Südostasiens haben eine überdurchschnittliche Bevölkerungsdichte (Einwohner pro Fläche)?
+
 ### Lektion VI - DML - Data Manipulation Language
 
 ##### Wie fügt man Daten in eine Tabelle ein?
