@@ -580,7 +580,7 @@ La normalisation est une approche de conception de base de données utilisée da
 
 ##### ER-Diagramm der Datenbank Schule
 
-![Alt text](./img/er_schule.png?raw=true "ER-Diagramm der Datenbank Schule")
+![Alt text](./imgages/er_schule.png?raw=true "ER-Diagramm der Datenbank Schule")
 
 - Lösche die Datensätze in der Tabelle Schüler.<br>
   - <code>delete from Schüler</code><br>
@@ -609,4 +609,3 @@ La normalisation est une approche de conception de base de données utilisée da
 
 [SQL Tutorial:](https://www.luo-darmstadt.de/sqltutorial/index.html)
 [database fiddle playground:](https://www.db-fiddle.com/f/5gbt7Z9msqwU9S5cG8YsMM/73)
-  
