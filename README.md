@@ -496,6 +496,11 @@ La normalisation est une approche de conception de base de données utilisée da
     <code>select \* from cia where Region in (select Region from cia where Name in ('Armenien', 'Iran'));</code>
 * Aufgabe 5
   - Welche Länder Südostasiens haben eine überdurchschnittliche Bevölkerungsdichte (Einwohner pro Fläche)?
+    <code>select Name, Einwohner/Fläche as Bevölkerungsdichte from cia where Region = "Südostasien" and Einwohner/Fläche > (select AVG(Einwohner/Fläche) from cia where Region ="Südostasien")</code>
+* Aufgabe 6
+  - Welche Länder haben eine Einwohnerzahl die größer als die von Kenia und kleiner als die von Kanada ist?
+    - <code>select Name from cia where Einwohner between (select Einwohner from cia where Name = "Kenia" ) and (select Einwohner from cia where Name = "Kanada");
+      <code</code>select Name from cia where Einwohner > (select Einwohner from cia where Name = 'Kenia') and Einwohner < (select Einwohner from cia where Name = "Kanada");</code>
 
 ### Lektion VI - DML - Data Manipulation Language
 
