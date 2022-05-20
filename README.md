@@ -403,6 +403,9 @@ La normalisation est une approche de conception de base de données utilisée da
 
 ### Lektion III - Mit dem Join Tabellen verknüpfen
 
+1- [SQL Tutorial mit Beispielen]()<br>
+![Alt text](./images/er_busunternehmen.png?raw=true "ER-Diagramm eines Busunternehmens")
+
 ### Lektion IV - Gruppierung mit GROUP BY
 
 ### Lektion V - Geschachtelte SELECT-Anweisungen
